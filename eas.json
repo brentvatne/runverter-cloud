@@ -1,7 +1,10 @@
 {
   "build": {
-    "release": {},
+    "release": {
+      "expoCli": "4.12.3"
+    },
     "development": {
+      "extends": "release",
       "developmentClient": true,
       "distribution": "internal"
     }
