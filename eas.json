@@ -7,6 +7,16 @@
       "extends": "release",
       "developmentClient": true,
       "distribution": "internal"
+    },
+    "simulator": {
+      "extends": "release",
+      "developmentClient": true,
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
+      }
     }
   },
   "submit": {
