@@ -2,12 +2,12 @@
   "build": {
     "production": {},
     "development": {
-      "extends": "release",
+      "extends": "production",
       "developmentClient": true,
       "distribution": "internal"
     },
     "simulator": {
-      "extends": "release",
+      "extends": "production",
       "developmentClient": true,
       "ios": {
         "simulator": true
