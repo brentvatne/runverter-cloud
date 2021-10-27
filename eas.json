@@ -1,23 +1,23 @@
 {
-  "build": {
-    "production": {},
-    "development": {
-      "extends": "production",
-      "developmentClient": true,
-      "distribution": "internal"
+    "build": {
+        "development": {
+            "distribution": "internal",
+            "android": {
+                "gradleCommand": ":app:assembleDebug"
+            },
+            "ios": {
+                "buildConfiguration": "Debug"
+            }
+        },
+        "preview": {
+            "ios": {
+                "distribution": "internal",
+                "simulator": true
+            }
+        },
+        "production": {}
     },
-    "simulator": {
-      "extends": "production",
-      "developmentClient": true,
-      "ios": {
-        "simulator": true
-      },
-      "android": {
-        "buildType": "apk"
-      }
+    "submit": {
+        "production": {}
     }
-  },
-  "submit": {
-    "release": {}
-  }
 }
