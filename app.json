@@ -18,7 +18,6 @@
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "xyz.bront.runverter",
       "supportsTablet": true
     },
     "android": {
